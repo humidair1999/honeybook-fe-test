@@ -38,8 +38,7 @@ app.use(express.static(path.join(__dirname, 'app')));
 var apiV1Router = express.Router();
 app.use('/api/v1', apiV1Router);
 
-apiV1Router.use('/products', products);
-apiV1Router.use('/variants', variants);
+// apiV1Router.use('/products', products);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
