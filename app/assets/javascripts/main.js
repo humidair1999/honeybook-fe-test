@@ -15,6 +15,7 @@ window.jkymarshHoneyBookFETest.config(function($stateProvider, $urlRouterProvide
     .state('home', {
       url: '/home',
       templateUrl: '/views/contacts-list-view.html',
+      controller: "ContactsListCtrl as contactsList",
       parent: 'master',
     });
 });
