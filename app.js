@@ -5,9 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var debug = require('debug')('stitchapp');
-
-// var products = require('./routes/products');
+var debug = require('debug')('honeybookapp');
 
 var app = express();
 
@@ -33,12 +31,6 @@ app.use('/fonts', express.static(path.join(__dirname, 'app', 'assets', 'styleshe
 app.use('/views', express.static(path.join(__dirname, 'app', 'views')));
 
 app.use(express.static(path.join(__dirname, 'app')));
-
-// namespace api under /api/v1
-var apiV1Router = express.Router();
-app.use('/api/v1', apiV1Router);
-
-// apiV1Router.use('/products', products);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

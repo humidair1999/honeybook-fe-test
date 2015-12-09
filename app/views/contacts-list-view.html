@@ -2,18 +2,19 @@
   <div class="col-md-3" ng-repeat="c in contactsList.contacts">
     <div class="honeybook--contact-item-container">
       <div class="honeybook--contact-item" ng-mouseenter="hovered = true" ng-mouseleave="hovered = false">
-        <img src="{{c.profile_image}}" class="w-1-1" alt="{{c.name}} photo">
+        <img src="{{c.profile_image || 'PATH_TO_DEFAULT_AVATAR'}}" class="w-1-1" alt="{{c.name || 'no name entered'}} photo">
 
         <div class="honeybook--contact-item__details-container" ng-class="{slideUp:hovered}">
-          <img src="{{c.icon}}" class="honeybook--contact-item__company-icon" alt="Company icon">
+          <img src="{{c.icon || 'PATH_TO_DEFAULT_ICON'}}" class="honeybook--contact-item__company-icon" alt="Company icon">
 
-          <h4 class="mt-xxl mb-xxs">{{c.name}}</h4>
+          <h4 class="mt-xxl mb-xxs">{{c.name || 'no name entered'}}</h4>
 
-          <h6 class="mt-0 fz-sm lh-1-2 c-gray">{{c.job}} &#124; {{c.company_name}}</h6>
+          <h6 class="mt-0 fz-sm lh-1-2 c-gray">{{c.job}} &#124; {{c.company_name || 'no company entered'}}</h6>
 
           <div class="pt-xxl">
-            <h6 class="mt-0 mb-0 fz-sm lh-1-2 c-gray">Phone number: {{c.phone}}</h6>
-            <h6 class="mt-0 mb-0 fz-sm lh-1-2 c-gray">{{c.email}}</h6>
+            <h6 class="mt-0 mb-0 fz-sm lh-1-2 c-gray">Phone number: {{c.phone || 'no phone entered'}}</h6>
+
+            <h6 class="mt-0 mb-0 fz-sm lh-1-2 c-gray">{{c.email || 'no email entered'}}</h6>
           </div>
         </div>
       </div>

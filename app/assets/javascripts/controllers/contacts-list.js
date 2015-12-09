@@ -3,7 +3,6 @@ window.jkymarshHoneyBookFETest.controller('ContactsListCtrl', ['ContactsService'
   var that = this;
 
   ContactsService.getAllContacts().then(function(response) {
-    console.log(response.data);
     that.contacts = response.data;
   });
 }]);

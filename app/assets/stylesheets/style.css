@@ -51,6 +51,9 @@
 
   background-color: #fff;
 
+  /* immediately translate panel off the page; this is a cool fallback for if/when
+      users don't have modern browsers, the content won't get shifted off the page
+  */
   transform: translateY(40px);
 
   -webkit-transition: all 0.7s;
@@ -66,6 +69,7 @@
   left: 10px;
 }
 
+/* overrides for bootstrap default styles */
 
 .honeybook--text-input {
   min-width: 300px;
@@ -94,5 +98,8 @@
 /* animation classes */
 
 .slideUp {
+  /* we use a y-translate to slide the panel because it's more performant and less
+      resource-intensive
+  */
   transform: translateY(0);
 }
