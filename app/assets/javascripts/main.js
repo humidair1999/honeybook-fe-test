@@ -1,6 +1,6 @@
-window.jkymarshStitchFETest = angular.module('jkymarshStitchFETest', ['ui.router']);
+window.jkymarshHoneyBookFETest = angular.module('jkymarshHoneyBookFETest', ['ui.router']);
 
-window.jkymarshStitchFETest.config(function($stateProvider, $urlRouterProvider) {
+window.jkymarshHoneyBookFETest.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/home");
 
   $stateProvider

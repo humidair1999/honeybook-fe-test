@@ -1,7 +1,7 @@
 // TODO: cache ajax responses when possible?
 
 // http://blog.thoughtram.io/angular/2015/07/07/service-vs-factory-once-and-for-all.html
-window.jkymarshStitchFETest.service('VariantsService', ['$http', function ($http) {
+window.jkymarshHoneyBookFETest.service('VariantsService', ['$http', function ($http) {
 
   return {
     updateVariant: function(variant) {

@@ -1,5 +1,5 @@
 // https://docs.angularjs.org/guide/concepts#controller
-window.jkymarshStitchFETest.controller('ProductDetailsCtrl', ['$stateParams', 'ProductsService', 'VariantsService', function($stateParams, ProductsService, VariantsService) {
+window.jkymarshHoneyBookFETest.controller('ProductDetailsCtrl', ['$stateParams', 'ProductsService', 'VariantsService', function($stateParams, ProductsService, VariantsService) {
   var that = this;
 
   this.productId = $stateParams.productId;
