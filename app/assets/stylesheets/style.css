@@ -1,25 +1,71 @@
 /* atomic classes */
 
 .pos-r { position: relative; }
+.pos-a { position: absolute; }
 
 .w-1-1 { width: 100%; }
 
 .mt-0 { margin-top: 0; }
 .mt-xxl { margin-top: 30px; }
 
+.mb-0 { margin-bottom: 0; }
 .mb-xxs { margin-bottom: 5px; }
+
+.p-sm { padding: 10px; }
+
+.pt-xxl { padding-top: 30px; }
 
 .lh-1-2 { line-height: 1.2; }
 
 .fz-sm { font-size: 15px; }
 
-.c-gray { color: #898989; }
+.c-gray { color: #a3a19f; }
+
+.bgc-gray-lt { background-color: #f2f1f2; }
 
 /* BEM styles */
 
-.thumbnail__company-icon {
+.honeybook--contact-item-container {
+  margin: 6px;
+  padding: 20px;
+
+  border: 2px solid #e5e5e5;
+
+  background-color: #fff;
+}
+
+.honeybook--contact-item {
+  position: relative;
+  min-height: 340px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.honeybook--contact-item__details-container {
   position: absolute;
-  width: 80px;
-  bottom: -20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #fff;
+
+  transform: translateY(40px);
+
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.honeybook--contact-item__company-icon {
+  position: absolute;
+  max-width: 60px;
+  max-height: 60px;
+  top: -50px;
   left: 10px;
+}
+
+.slideUp {
+  transform: translateY(0);
 }
