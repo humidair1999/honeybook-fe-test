@@ -1,0 +1,25 @@
+/* atomic classes */
+
+.pos-r { position: relative; }
+
+.w-1-1 { width: 100%; }
+
+.mt-0 { margin-top: 0; }
+.mt-xxl { margin-top: 30px; }
+
+.mb-xxs { margin-bottom: 5px; }
+
+.lh-1-2 { line-height: 1.2; }
+
+.fz-sm { font-size: 15px; }
+
+.c-gray { color: #898989; }
+
+/* BEM styles */
+
+.thumbnail__company-icon {
+  position: absolute;
+  width: 80px;
+  bottom: -20px;
+  left: 10px;
+}

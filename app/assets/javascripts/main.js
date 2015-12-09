@@ -14,13 +14,7 @@ window.jkymarshHoneyBookFETest.config(function($stateProvider, $urlRouterProvide
     })
     .state('home', {
       url: '/home',
-      templateUrl: '/views/empty-detail-view.html',
+      templateUrl: '/views/contacts-list-view.html',
       parent: 'master',
-    })
-    .state('product', {
-      url: "/products/:productId",
-      templateUrl: "/views/product-detail-view.html",
-      controller: "ProductDetailsCtrl as productDetails",
-      parent: 'master'
     });
 });
